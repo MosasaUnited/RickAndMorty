@@ -9,10 +9,12 @@ class CharactersRepo {
 
   // <<< to call function from web services
 
-  Future<List<dynamic>> getAllCharacters() async {
+  Future<List<CharacterModel>> getAllCharacters() async {
     final characters = await charactersWebServices.getAllCharacters();
     return characters
         .map((character) => CharacterModel.fromJson(character))
         .toList();
   }
+
+  // >> Now Time To Pass Data To Cubit
 }
