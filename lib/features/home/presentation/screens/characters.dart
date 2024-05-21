@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/core/constants/colors.dart';
+import 'package:rick_and_morty/features/home/presentation/widgets/build_bloc_widget.dart';
 
 class CharactersScreen extends StatelessWidget {
   const CharactersScreen({super.key});
@@ -7,8 +9,15 @@ class CharactersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Characters Screen'),
+        backgroundColor: MyColors.myYellow,
+        title: const Text(
+          'Characters Screen',
+          style: TextStyle(
+            color: MyColors.myGrey,
+          ),
+        ),
       ),
+      body: const BuildBlocWidget(),
     );
   }
 }
