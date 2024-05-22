@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/features/home/presentation/widgets/build_characters_list.dart';
 
 import '../../../../core/constants/colors.dart';
+import 'build_characters_list.dart';
 
 class BuildLoadedListWidget extends StatelessWidget {
   const BuildLoadedListWidget({super.key});

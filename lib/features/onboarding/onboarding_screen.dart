@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
-
 import '../../core/constants/lottie_assets.dart';
 import '../../core/routing/app_router.dart';
 
@@ -16,7 +15,8 @@ class OnBoardingScreen extends StatelessWidget {
       body: Column(
         children: [
           Lottie.asset(AppLottieAssets.onBoardingAnimated,
-              width: 300.w, height: 300.h),
+              width: 300.w, height: 300.h, fit: BoxFit.cover,
+          ),
           const Spacer(),
           Padding(
             padding: EdgeInsets.symmetric(

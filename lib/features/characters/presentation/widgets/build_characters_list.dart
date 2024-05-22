@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'build_bloc_widget.dart';
 import 'characters_item.dart';
 
 class BuildCharactersList extends StatelessWidget {
@@ -17,9 +18,12 @@ class BuildCharactersList extends StatelessWidget {
       shrinkWrap: true,
       physics: const ClampingScrollPhysics(),
       padding: EdgeInsets.zero,
+      itemCount: allCharacters.length,
       itemBuilder: (ctx, index) {
         // TODO: not Done yet
-        return const CharactersItem();
+        return CharactersItem(
+          characterModel: allCharacters[index],
+        );
       },
     );
   }
