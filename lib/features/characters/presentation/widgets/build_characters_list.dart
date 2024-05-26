@@ -19,10 +19,10 @@ class BuildCharactersList extends StatelessWidget {
       physics: const ClampingScrollPhysics(),
       padding: EdgeInsets.zero,
       itemCount: allCharacters.length,
-      itemBuilder: (ctx, index) {
+      itemBuilder: (context, index) {
         // TODO: not Done yet
         return CharactersItem(
-          characterModel: allCharacters[index],
+          character: allCharacters[index],
         );
       },
     );

@@ -1,5 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../data/models/character_model.dart';
 import '../../data/repo/characters_repo.dart';
@@ -18,7 +18,6 @@ class CharactersCubit extends Cubit<CharactersState> {
     charactersRepo.getAllCharacters().then(
       (characters) {
         emit(CharactersLoaded(characters));
-        this.characters = characters;
       },
     );
 

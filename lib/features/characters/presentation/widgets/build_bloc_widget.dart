@@ -18,8 +18,7 @@ class _BuildBlocWidgetState extends State<BuildBlocWidget> {
   @override
   void initState() {
     super.initState();
-    allCharacters =
-        BlocProvider.of<CharactersCubit>(context).getAllCharacters();
+    BlocProvider.of<CharactersCubit>(context).getAllCharacters();
   }
 
   @override

@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/characters/presentation/screens/characters.dart';
@@ -15,7 +17,9 @@ abstract class AppRouter {
       ),
       GoRoute(
         path: kCharacters,
-        builder: (context, state) => CharactersScreen(),
+        builder: (context, state) => BlocProvider(
+            create: (BuildContext context) => charactersCubit,
+            child: const CharactersScreen()),
       ),
     ],
   );
