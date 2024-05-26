@@ -41,23 +41,16 @@ class CharactersItem extends StatelessWidget {
             ),
           ),
           child: Container(
-              color: MyColors.myGrey,
-              child: character.image!.isEmpty
-                  ? Lottie.asset(
-                      AppLottieAssets.loading,
-                      width: double.infinity,
-                      height: double.infinity,
-                      fit: BoxFit.cover,
-                    )
-                  : Image.network(
-                      'https://rickandmortyapi.com/api/character/avatar/1.jpeg')
-              // : Lottie.asset(
-              //     AppLottieAssets.error,
-              //     width: double.infinity,
-              //     height: double.infinity,
-              //     fit: BoxFit.cover,
-              //   ),
-              ),
+            color: MyColors.myGrey,
+            child: character.image!.isEmpty
+                ? Lottie.asset(
+                    AppLottieAssets.loading,
+                    width: double.infinity,
+                    height: double.infinity,
+                    fit: BoxFit.cover,
+                  )
+                : Image.network(character.image!),
+          ),
         ),
       ),
     );
