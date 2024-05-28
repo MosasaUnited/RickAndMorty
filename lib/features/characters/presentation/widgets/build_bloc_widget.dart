@@ -7,6 +7,7 @@ import '../../logic/cubit/characters_cubit.dart';
 import 'build_loaded_list_widget.dart';
 
 late List<CharacterModel> allCharacters;
+late List<CharacterModel> searchedForAllCharacters;
 
 class BuildBlocWidget extends StatefulWidget {
   const BuildBlocWidget({super.key});

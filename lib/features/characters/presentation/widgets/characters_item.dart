@@ -49,7 +49,12 @@ class CharactersItem extends StatelessWidget {
                     height: double.infinity,
                     fit: BoxFit.cover,
                   )
-                : Image.network(character.image!),
+                : Image.network(
+                    character.image!,
+                    width: double.infinity,
+                    height: double.infinity,
+                    fit: BoxFit.cover,
+                  ),
           ),
         ),
       ),

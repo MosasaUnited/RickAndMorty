@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/features/characters/presentation/widgets/build_search_field.dart';
 
 import 'build_bloc_widget.dart';
 import 'characters_item.dart';
@@ -18,11 +19,14 @@ class BuildCharactersList extends StatelessWidget {
       shrinkWrap: true,
       physics: const ClampingScrollPhysics(),
       padding: EdgeInsets.zero,
-      itemCount: allCharacters.length,
+      itemCount: searchTextController.text.isEmpty
+          ? allCharacters.length
+          : searchedForAllCharacters.length,
       itemBuilder: (context, index) {
-        // TODO: not Done yet
         return CharactersItem(
-          character: allCharacters[index],
+          character: searchTextController.text.isEmpty
+              ? allCharacters[index]
+              : searchedForAllCharacters[index],
         );
       },
     );
