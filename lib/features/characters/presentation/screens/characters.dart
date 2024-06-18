@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rick_and_morty/core/constants/colors.dart';
 import 'package:rick_and_morty/features/characters/data/repo/characters_repo.dart';
 import 'package:rick_and_morty/features/characters/data/services/characters_web_services.dart';
@@ -7,7 +8,7 @@ import 'package:rick_and_morty/features/characters/logic/cubit/characters_cubit.
 import 'package:rick_and_morty/features/characters/presentation/widgets/build_appbar_title.dart';
 import 'package:rick_and_morty/features/characters/presentation/widgets/build_search_field.dart';
 
-import '../widgets/build_bloc_widget.dart';
+import '../widgets/offline_builder_widget.dart';
 
 late CharactersRepo charactersRepo;
 late CharactersCubit charactersCubit;
@@ -42,9 +43,14 @@ class _CharactersScreenState extends State<CharactersScreen> {
           backgroundColor: MyColors.myYellow,
           title:
               isSearching ? const BuildSearchField() : const BuildAppbarTitle(),
+          centerTitle: true,
+          titleTextStyle: TextStyle(
+            fontWeight: FontWeight.w900,
+            fontSize: 30.sp,
+          ),
           actions: buildAppBarActions(),
         ),
-        body: const BuildBlocWidget(),
+        body: const OfflineBuilderWidget(),
       ),
     );
   }
