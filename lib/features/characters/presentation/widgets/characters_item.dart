@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:rick_and_morty/core/constants/colors.dart';
 import 'package:rick_and_morty/core/constants/lottie_assets.dart';
 import 'package:rick_and_morty/features/characters/data/models/character_model.dart';
+
+import '../../../../core/routing/app_router.dart';
 
 class CharactersItem extends StatelessWidget {
   final CharacterModel character;
@@ -21,23 +24,28 @@ class CharactersItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
       ),
       child: InkWell(
+        onTap: () => GoRouter.of(context)
+            .pushNamed(AppRouter.kCharactersDetails, extra: character.image),
         child: GridTile(
-          footer: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-            color: Colors.black87,
-            alignment: Alignment.bottomCenter,
-            child: Text(
-              character.name!,
-              style: TextStyle(
-                height: 1.3.h,
-                fontSize: 16.sp,
-                color: MyColors.myOffWhite,
-                fontWeight: FontWeight.bold,
+          footer: Hero(
+            tag: character.id!,
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+              color: Colors.black87,
+              alignment: Alignment.bottomCenter,
+              child: Text(
+                character.name!,
+                style: TextStyle(
+                  height: 1.3.h,
+                  fontSize: 16.sp,
+                  color: MyColors.myOffWhite,
+                  fontWeight: FontWeight.bold,
+                ),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 2,
+                textAlign: TextAlign.center,
               ),
-              overflow: TextOverflow.ellipsis,
-              maxLines: 2,
-              textAlign: TextAlign.center,
             ),
           ),
           child: Container(

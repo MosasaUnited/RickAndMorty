@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rick_and_morty/features/characters/presentation/widgets/build_bloc_widget.dart';
 
 import '../../../../core/constants/colors.dart';
+import 'build_bloc_widget.dart';
 
 class BuildSearchField extends StatefulWidget {
   const BuildSearchField({super.key});
