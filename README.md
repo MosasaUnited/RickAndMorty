@@ -1,63 +1,63 @@
-#Rick and Morty App
+# Rick and Morty App
 This Flutter application showcases characters from the popular animated series Rick and Morty. It utilizes various packages to deliver a rich and interactive user experience.
 
-##Key Features:
+## Key Features:
 
-###Character Listing:
+### Character Listing:
 The home screen displays a comprehensive list of characters, fetched from the Rick and Morty API.
 
-###Character Details:
+### Character Details:
 Upon tapping a character, a detailed view appears, presenting comprehensive information about the selected character. Hero Widget ensures a smooth transition between screens.
 
-###Search Functionality: 
+### Search Functionality: 
 An integrated search bar allows users to filter characters by name, enabling quick and easy navigation.
 
-###Splash Screen:
+### Splash Screen:
 A visually appealing splash screen greets users upon app launch.
 
-###App Icon: 
+### App Icon: 
 A custom app icon enhances the overall branding and user experience.
 
-##Technologies:
+## Technologies:
 
-###State Management:
+### State Management:
 flutter_bloc, bloc
 
-###Web Services:
-dio
+### Web Services:
+Dio
 
-###App Icon:
+### App Icon:
 flutter_launcher_icons
 
-###Splash Screen:
+### Splash Screen:
 flutter_native_splash
 
-###Offline Support:
+### Offline Support:
 flutter_offline
 
-###Adaptive Screen:
+### Adaptive Screen:
 flutter_screenutil
 
-###Routing:
+### Routing:
 go_router
 
-###Lottie Animations:
+### Lottie Animations:
 lottie
 
-##Additional Features:
+## Additional Features:
 
-###Information Screen:
+### Information Screen:
 A dedicated screen provides users with brief app information.
-###Development:
+### Development:
 This application is actively under development, with continuous improvements and new features being added.
 
-##Future Enhancements:
+## Future Enhancements:
 
-###Character Favoriting:
+### Character Favoriting:
 Users should be able to favorite characters for easy access.
 
-###Episode Listing:
+### Episode Listing:
 Integration of episode information is planned.
 
-###Character Quotes:
+### Character Quotes:
 Displaying memorable quotes from each character is in the pipeline.
