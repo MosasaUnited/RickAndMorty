@@ -25,7 +25,7 @@ class CharactersItem extends StatelessWidget {
       ),
       child: InkWell(
         onTap: () => GoRouter.of(context)
-            .pushNamed(AppRouter.kCharactersDetails, extra: character.image),
+            .push(AppRouter.kCharactersDetails, extra: character),
         child: GridTile(
           footer: Hero(
             tag: character.id!,

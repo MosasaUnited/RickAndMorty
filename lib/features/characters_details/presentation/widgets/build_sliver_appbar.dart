@@ -11,11 +11,12 @@ class BuildSliverAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      expandedHeight: 600,
+      expandedHeight: 500,
       pinned: true,
       stretch: true,
       backgroundColor: MyColors.myGrey,
       flexibleSpace: FlexibleSpaceBar(
+        centerTitle: true,
         title: Text(
           character.name!,
           style: const TextStyle(

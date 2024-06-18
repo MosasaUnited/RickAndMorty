@@ -25,12 +25,14 @@ abstract class AppRouter {
             child: const CharactersScreen()),
       ),
       GoRoute(
-        path: kCharactersDetails,
-        name: 'charactersDetails',
-        builder: (context, state) => CharacterDetailsScreen(
-          character: state.extra as CharacterModel,
-        ),
-      ),
+          name: 'characterDetails',
+          path: kCharactersDetails,
+          builder: (context, state) {
+            final character = state.extra as CharacterModel;
+            return CharacterDetailsScreen(
+              character: character,
+            );
+          }),
     ],
   );
 }
