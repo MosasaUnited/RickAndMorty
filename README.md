@@ -1,3 +1,6 @@
+
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/964ce872-d32a-4eeb-bf82-997e567fff98" width="100" height="100">
+<!-- ![rick-and-morty-folder-icon-43820](https://github.com/MosasaUnited/RickAndMorty/assets/79766907/964ce872-d32a-4eeb-bf82-997e567fff98) -->
 # Rick and Morty App
 This Flutter application showcases characters from the popular animated series Rick and Morty. It utilizes various packages to deliver a rich and interactive user experience.
 
