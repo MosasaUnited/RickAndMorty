@@ -5,6 +5,18 @@
 # Rick and Morty App
 This Flutter application showcases characters from the popular animated series Rick and Morty. It utilizes various packages to deliver a rich and interactive user experience.
 
+<div>
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/7ea7a8df-dd6f-4317-b83a-a9febf62d06c" width="317" height="567">
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/d2dbab05-195d-4973-a758-b2cea127331d" width="317" height="567">
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/c802cc52-dfaa-4a1a-825d-3341b44288dc" width="317" height="567">
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/2549c1fa-0416-4783-8520-c50d3bbe9e69" width="317" height="567">
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/54f95572-8024-40d2-ad2d-e87d46dc94af" width="317" height="567">
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/f6759789-797f-4126-bdb6-da06d2f318a5" width="317" height="567">
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/73ad4a47-4ee2-410b-beb8-5f9576a56690" width="317" height="567">
+<img src="https://github.com/MosasaUnited/RickAndMorty/assets/79766907/14358847-19ce-48f9-82a0-1ff50f75814c" width="317" height="567">
+</div>
+
+
 ## Key Features:
 
 ### Character Listing:
